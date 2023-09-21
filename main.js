@@ -4,5 +4,6 @@ async function searchMovie(){
         method : "get",
     });
 
-    console.log(response)
+    const tittle = document.getElementById("tittle").value
+    tittle.innerHTML = response['Title']
 }
