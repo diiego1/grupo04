@@ -7,5 +7,11 @@ async function searchMovie(){
     var data = await response.json();
 
     const tittle = document.getElementById("tittle")
+    const year = document.getElementById("tittle")
+    const director = document.getElementById("tittle")
+
     tittle.innerHTML = data['Title']
+    year.innerHTML = data['Year']
+    director.innerHTML = data['Director']
+
 }
