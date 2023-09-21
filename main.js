@@ -4,6 +4,8 @@ async function searchMovie(){
         method : "get",
     });
 
+    var data = await response.json();
+
     const tittle = document.getElementById("tittle")
-    tittle.innerHTML = response['Title']
+    tittle.innerHTML = data['Title']
 }
